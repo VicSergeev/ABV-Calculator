@@ -45,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				18EFB11F2B485AF300FBE1E2 /* ABV-Calculator */,
+				18EFB1292B485AF500FBE1E2 /* Assets.xcassets */,
 				18EFB11E2B485AF300FBE1E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +64,6 @@
 				18EFB1342B485B6500FBE1E2 /* Config */,
 				18EFB1362B485BA300FBE1E2 /* View Controllers */,
 				18EFB1352B485B9700FBE1E2 /* Storyboards */,
-				18EFB1292B485AF500FBE1E2 /* Assets.xcassets */,
 				18EFB1392B485BC200FBE1E2 /* Models */,
 				18EFB13E2B485BFF00FBE1E2 /* DataStore */,
 			);
