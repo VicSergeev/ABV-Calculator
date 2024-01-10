@@ -8,12 +8,17 @@
 import UIKit
 
 final class BrewViewController: UIViewController {
-
+    
+    @IBOutlet var brewImageView: UIImageView!
+    @IBOutlet var abvLabel: UILabel!
+    @IBOutlet var daysOfFermentationLabel: UILabel!
+    @IBOutlet var brewTypeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func deleteCellAction(_ sender: UIButton) {
+    }
+    
 }

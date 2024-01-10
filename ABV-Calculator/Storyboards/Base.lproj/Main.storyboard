@@ -31,34 +31,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xjh-AW-7Xg">
-                                <rect key="frame" x="16" y="116" width="361" height="202"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xjh-AW-7Xg" userLabel="Mian Stack View">
+                                <rect key="frame" x="16" y="116" width="361" height="261"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDB-qZ-3By">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Дата первого дня брожения" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3H-Ym-TfK">
-                                        <rect key="frame" x="0.0" y="42" width="361" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Дата последнего дня брожения" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zme-a7-J6J">
-                                        <rect key="frame" x="0.0" y="84" width="361" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Тип напитка" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="REi-fp-X2t">
+                                        <rect key="frame" x="0.0" y="39" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Начальная плотность" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxz-CG-D2W">
-                                        <rect key="frame" x="0.0" y="126" width="361" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <rect key="frame" x="0.0" y="78" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Конечная плотность" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mtc-i7-9Ug">
-                                        <rect key="frame" x="0.0" y="168" width="361" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <rect key="frame" x="0.0" y="117" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qUO-YC-Itz">
+                                        <rect key="frame" x="0.0" y="156" width="361" height="105"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="npq-dQ-Sw1" userLabel="Star Date Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начало брожения:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOC-73-Qg1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="178" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="R9G-AG-F93">
+                                                        <rect key="frame" x="183" y="0.0" width="178" height="50"/>
+                                                    </datePicker>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HpY-4H-uNH" userLabel="End Date Stack View">
+                                                <rect key="frame" x="0.0" y="55" width="361" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Окончание брожения:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-lt-M3O">
+                                                        <rect key="frame" x="0.0" y="0.0" width="178" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="8qp-re-lyW">
+                                                        <rect key="frame" x="183" y="0.0" width="178" height="50"/>
+                                                    </datePicker>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bua-kU-SAu">
@@ -70,16 +98,27 @@
                         <viewLayoutGuide key="safeArea" id="5Yc-Mm-Y7h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Bua-kU-SAu" firstAttribute="centerY" secondItem="vgt-hb-ShS" secondAttribute="centerY" id="2gU-bC-FR3"/>
-                            <constraint firstItem="5Yc-Mm-Y7h" firstAttribute="trailing" secondItem="Xjh-AW-7Xg" secondAttribute="trailing" constant="16" id="RuI-ma-wPq"/>
-                            <constraint firstItem="Bua-kU-SAu" firstAttribute="centerX" secondItem="vgt-hb-ShS" secondAttribute="centerX" id="UzM-lw-kN4"/>
-                            <constraint firstItem="Xjh-AW-7Xg" firstAttribute="leading" secondItem="5Yc-Mm-Y7h" secondAttribute="leading" constant="16" id="g22-MH-zoz"/>
-                            <constraint firstItem="Xjh-AW-7Xg" firstAttribute="top" secondItem="5Yc-Mm-Y7h" secondAttribute="top" constant="20" id="jOD-vH-R9y"/>
+                            <constraint firstItem="Xjh-AW-7Xg" firstAttribute="leading" secondItem="5Yc-Mm-Y7h" secondAttribute="leading" constant="16" id="5N9-Yh-KWz"/>
+                            <constraint firstItem="Xjh-AW-7Xg" firstAttribute="top" secondItem="5Yc-Mm-Y7h" secondAttribute="top" constant="20" id="VNc-7B-0Rf"/>
+                            <constraint firstItem="Bua-kU-SAu" firstAttribute="centerX" secondItem="vgt-hb-ShS" secondAttribute="centerX" id="Yli-TI-Klx"/>
+                            <constraint firstItem="5Yc-Mm-Y7h" firstAttribute="trailing" secondItem="Xjh-AW-7Xg" secondAttribute="trailing" constant="16" id="gx9-d9-1nK"/>
+                            <constraint firstItem="Bua-kU-SAu" firstAttribute="centerY" secondItem="vgt-hb-ShS" secondAttribute="centerY" id="vlC-ka-yfc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Создать напиток" id="dAZ-4s-RAs">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="xmark.circle" catalog="system" id="o1B-nP-1Jh"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="xmark.circle" catalog="system" id="o1B-nP-1Jh">
+                            <connections>
+                                <action selector="discardAction:" destination="LMC-nv-ia3" id="cwf-Km-DEP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="beginFermentationDatePicker" destination="R9G-AG-F93" id="XGJ-9U-vSt"/>
+                        <outlet property="brewTitleTextField" destination="RDB-qZ-3By" id="PIU-Tu-HPz"/>
+                        <outlet property="endFermentationDatePicker" destination="8qp-re-lyW" id="Zfd-OQ-CVm"/>
+                        <outlet property="finalGravityTextField" destination="Mtc-i7-9Ug" id="7HV-cu-jFu"/>
+                        <outlet property="originalGravityTextField" destination="cxz-CG-D2W" id="eeJ-D9-ffD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPZ-Kf-HnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,9 +174,93 @@
                     <view key="view" contentMode="scaleToFill" id="KKm-RM-zHQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="tei-da-W2d">
+                                <rect key="frame" x="39.333333333333343" y="386" width="314.33333333333326" height="138"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="WJK-5v-Aa2">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="138"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип напитка:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIp-Zh-y8Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="117.33333333333333" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Содержание алкоголя %:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzC-vG-a3Q">
+                                                <rect key="frame" x="0.0" y="57" width="233" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество дней брожения:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jen-NY-eIc">
+                                                <rect key="frame" x="0.0" y="114" width="260" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="taI-M5-owE">
+                                        <rect key="frame" x="269" y="0.0" width="45.333333333333314" height="138"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="тип" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHi-y7-H6L">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjB-Bj-JiG">
+                                                <rect key="frame" x="0.0" y="57" width="17.666666666666668" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="дней" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkG-Lq-yd5">
+                                                <rect key="frame" x="0.0" y="114" width="45.333333333333336" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fc0-YR-F6V">
+                                <rect key="frame" x="152.33333333333334" y="576" width="88.666666666666657" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteCellAction:" destination="2IJ-Ba-dsV" eventType="touchUpInside" id="idW-2S-fYg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lzc-Yv-G9l">
+                                <rect key="frame" x="16" y="123" width="361" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="eC8-oq-1Dk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tv0-J9-jmC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tv0-J9-jmC" firstAttribute="trailing" secondItem="Lzc-Yv-G9l" secondAttribute="trailing" constant="16" id="5LG-j3-1Un"/>
+                            <constraint firstItem="Lzc-Yv-G9l" firstAttribute="centerX" secondItem="tei-da-W2d" secondAttribute="centerX" id="6Ix-KS-lRK"/>
+                            <constraint firstItem="Lzc-Yv-G9l" firstAttribute="centerX" secondItem="fc0-YR-F6V" secondAttribute="centerX" id="88c-w8-q6n"/>
+                            <constraint firstItem="fc0-YR-F6V" firstAttribute="top" secondItem="tei-da-W2d" secondAttribute="bottom" constant="52" id="ADB-G7-Lh9"/>
+                            <constraint firstItem="tei-da-W2d" firstAttribute="top" secondItem="Lzc-Yv-G9l" secondAttribute="bottom" constant="21" id="Q4n-ma-vBC"/>
+                            <constraint firstItem="Lzc-Yv-G9l" firstAttribute="leading" secondItem="tv0-J9-jmC" secondAttribute="leading" constant="16" id="cTV-bE-lQ2"/>
+                            <constraint firstItem="Lzc-Yv-G9l" firstAttribute="top" secondItem="tv0-J9-jmC" secondAttribute="top" constant="123" id="thn-Yu-xgh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="abvLabel" destination="tjB-Bj-JiG" id="XoG-Dp-7A4"/>
+                        <outlet property="brewImageView" destination="Lzc-Yv-G9l" id="7e8-lG-AYt"/>
+                        <outlet property="brewTypeLabel" destination="AHi-y7-H6L" id="zUV-9G-jie"/>
+                        <outlet property="daysOfFermentationLabel" destination="IkG-Lq-yd5" id="tu9-cR-yt2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YlJ-k9-DDo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,6 +298,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="111" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Вычислить"/>
+                                        <connections>
+                                            <action selector="getResultAction:" destination="9om-L8-3mf" eventType="touchUpInside" id="V9M-Fi-yEL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHn-ne-zGB">
                                         <rect key="frame" x="0.0" y="39.333333333333314" width="111" height="34.333333333333343"/>
@@ -182,6 +308,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Очистить">
                                             <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="clearAction:" destination="9om-L8-3mf" eventType="touchUpInside" id="gyG-eV-HnK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -191,12 +320,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="ta4-6k-Mui">
                                 <rect key="frame" x="16" y="175" width="361" height="128"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Коненчная плотность" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ztm-sY-7fL">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Начальная плотность" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ztm-sY-7fL">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Начальная плотность" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cB1-a9-pvJ">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Конечная плотность" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cB1-a9-pvJ">
                                         <rect key="frame" x="0.0" y="47" width="361" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -220,6 +349,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Калькулятор" id="5TF-8M-sUs"/>
+                    <connections>
+                        <outlet property="finalGravityTextField" destination="cB1-a9-pvJ" id="nAc-jM-pol"/>
+                        <outlet property="originalGravityTextField" destination="Ztm-sY-7fL" id="PHY-1h-TmD"/>
+                        <outlet property="resultTextField" destination="IqB-PH-0ct" id="vPo-kF-1fi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQe-DH-Z2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
