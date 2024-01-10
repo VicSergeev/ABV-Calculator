@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cR0-Gl-MpH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lZc-ah-Kvc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="LlV-i9-cim">
             <objects>
-                <viewController id="QZH-5z-Ato" sceneMemberID="viewController">
+                <viewController id="QZH-5z-Ato" customClass="AboutViewController" customModule="ABV_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="naa-pp-qWi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,22 +21,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3E-TD-rmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1153" y="340"/>
+            <point key="canvasLocation" x="82" y="1110"/>
         </scene>
-        <!--View Controller-->
+        <!--Создать напиток-->
         <scene sceneID="LCD-HR-FVF">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="LMC-nv-ia3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgt-hb-ShS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xjh-AW-7Xg">
+                                <rect key="frame" x="16" y="116" width="361" height="202"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDB-qZ-3By">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Дата первого дня брожения" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3H-Ym-TfK">
+                                        <rect key="frame" x="0.0" y="42" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Дата последнего дня брожения" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zme-a7-J6J">
+                                        <rect key="frame" x="0.0" y="84" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Начальная плотность" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxz-CG-D2W">
+                                        <rect key="frame" x="0.0" y="126" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Конечная плотность" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mtc-i7-9Ug">
+                                        <rect key="frame" x="0.0" y="168" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bua-kU-SAu">
+                                <rect key="frame" x="142" y="409" width="109.33333333333331" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Сохранить"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5Yc-Mm-Y7h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bua-kU-SAu" firstAttribute="centerY" secondItem="vgt-hb-ShS" secondAttribute="centerY" id="2gU-bC-FR3"/>
+                            <constraint firstItem="5Yc-Mm-Y7h" firstAttribute="trailing" secondItem="Xjh-AW-7Xg" secondAttribute="trailing" constant="16" id="RuI-ma-wPq"/>
+                            <constraint firstItem="Bua-kU-SAu" firstAttribute="centerX" secondItem="vgt-hb-ShS" secondAttribute="centerX" id="UzM-lw-kN4"/>
+                            <constraint firstItem="Xjh-AW-7Xg" firstAttribute="leading" secondItem="5Yc-Mm-Y7h" secondAttribute="leading" constant="16" id="g22-MH-zoz"/>
+                            <constraint firstItem="Xjh-AW-7Xg" firstAttribute="top" secondItem="5Yc-Mm-Y7h" secondAttribute="top" constant="20" id="jOD-vH-R9y"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Создать напиток" id="dAZ-4s-RAs">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="xmark.circle" catalog="system" id="o1B-nP-1Jh"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPZ-Kf-HnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="1075"/>
+            <point key="canvasLocation" x="2060" y="1110"/>
         </scene>
         <!--Мои напитки-->
         <scene sceneID="9ld-hw-pmh">
@@ -54,6 +101,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="2IJ-Ba-dsV" kind="presentation" modalPresentationStyle="fullScreen" id="xzd-z7-WWb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -69,19 +119,35 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9VD-Zx-Snn">
                             <connections>
-                                <segue destination="LMC-nv-ia3" kind="presentation" id="ZX0-q8-t0l"/>
+                                <segue destination="edA-0o-rCf" kind="presentation" modalPresentationStyle="fullScreen" id="ZX0-q8-t0l"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3w-QE-EA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242" y="340"/>
+            <point key="canvasLocation" x="1168.7022900763359" y="339.43661971830988"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--View Controller-->
+        <scene sceneID="cC2-fj-5S9">
+            <objects>
+                <viewController id="2IJ-Ba-dsV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KKm-RM-zHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tv0-J9-jmC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YlJ-k9-DDo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060.3053435114502" y="338.73239436619718"/>
+        </scene>
+        <!--Главная-->
         <scene sceneID="Ifo-3o-ZqV">
             <objects>
                 <navigationController id="cR0-Gl-MpH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Главная" image="list.bullet.rectangle.portrait" catalog="system" id="H4S-1g-dDM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jgn-8v-BgY">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -92,11 +158,66 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T7Y-5x-R7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-844" y="339"/>
+            <point key="canvasLocation" x="81.679389312977094" y="338.73239436619718"/>
+        </scene>
+        <!--Просто посчитать-->
+        <scene sceneID="75B-5A-cTy">
+            <objects>
+                <viewController id="9om-L8-3mf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DLK-dc-LEl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GYu-fD-QzM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Просто посчитать" image="percent" catalog="system" id="u00-7P-9du"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQe-DH-Z2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-849" y="1110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bfo-8y-InT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="edA-0o-rCf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="02j-yE-f01">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LMC-nv-ia3" kind="relationship" relationship="rootViewController" id="cmA-px-PsG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaO-lX-v16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="1110"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Rti-ZU-8za">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lZc-ah-Kvc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oKP-zv-hIK">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cR0-Gl-MpH" kind="relationship" relationship="viewControllers" id="4WI-1v-Zc4"/>
+                        <segue destination="9om-L8-3mf" kind="relationship" relationship="viewControllers" id="pWe-J1-rKh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BxT-gX-B4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-845.03816793893122" y="338.73239436619718"/>
         </scene>
     </scenes>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
+        <image name="percent" catalog="system" width="128" height="121"/>
+        <image name="xmark.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
