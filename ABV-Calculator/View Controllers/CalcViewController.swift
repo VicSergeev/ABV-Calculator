@@ -30,3 +30,4 @@ final class CalcViewController: UIViewController {
     }
     
 }
+// добавить алерты если поля пустые при нажатии на вычисление
