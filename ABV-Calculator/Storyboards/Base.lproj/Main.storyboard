@@ -21,12 +21,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3E-TD-rmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82" y="1110"/>
+            <point key="canvasLocation" x="1008.3969465648854" y="1109.8591549295775"/>
         </scene>
         <!--Создать напиток-->
         <scene sceneID="LCD-HR-FVF">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="LMC-nv-ia3" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="LMC-nv-ia3" customClass="NewBrewViewController" customModule="ABV_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgt-hb-ShS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,12 +83,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPZ-Kf-HnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2060" y="1110"/>
+            <point key="canvasLocation" x="2985.4961832061067" y="1109.8591549295775"/>
         </scene>
         <!--Мои напитки-->
         <scene sceneID="9ld-hw-pmh">
             <objects>
-                <tableViewController id="aEl-Ct-WC3" sceneMemberID="viewController">
+                <tableViewController id="aEl-Ct-WC3" customClass="MainViewController" customModule="ABV_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wlV-v3-b7J">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="1168.7022900763359" y="339.43661971830988"/>
         </scene>
-        <!--View Controller-->
+        <!--Brew View Controller-->
         <scene sceneID="cC2-fj-5S9">
             <objects>
-                <viewController id="2IJ-Ba-dsV" sceneMemberID="viewController">
+                <viewController id="2IJ-Ba-dsV" customClass="BrewViewController" customModule="ABV_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KKm-RM-zHQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,11 +143,11 @@
             </objects>
             <point key="canvasLocation" x="2060.3053435114502" y="338.73239436619718"/>
         </scene>
-        <!--Главная-->
+        <!--Мои напитки-->
         <scene sceneID="Ifo-3o-ZqV">
             <objects>
                 <navigationController id="cR0-Gl-MpH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Главная" image="list.bullet.rectangle.portrait" catalog="system" id="H4S-1g-dDM"/>
+                    <tabBarItem key="tabBarItem" title="Мои напитки" image="list.bullet.rectangle.portrait" catalog="system" id="H4S-1g-dDM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jgn-8v-BgY">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -160,21 +160,70 @@
             </objects>
             <point key="canvasLocation" x="81.679389312977094" y="338.73239436619718"/>
         </scene>
-        <!--Просто посчитать-->
+        <!--Калькулятор-->
         <scene sceneID="75B-5A-cTy">
             <objects>
-                <viewController id="9om-L8-3mf" sceneMemberID="viewController">
+                <viewController id="9om-L8-3mf" customClass="CalcViewController" customModule="ABV_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DLK-dc-LEl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2ok-vK-6cu">
+                                <rect key="frame" x="141" y="396" width="111" height="73.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26A-um-gtJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Вычислить"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHn-ne-zGB">
+                                        <rect key="frame" x="0.0" y="39.333333333333314" width="111" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Очистить">
+                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jHn-ne-zGB" firstAttribute="centerX" secondItem="2ok-vK-6cu" secondAttribute="centerX" id="XOv-cw-0ne"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="ta4-6k-Mui">
+                                <rect key="frame" x="16" y="175" width="361" height="128"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Коненчная плотность" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ztm-sY-7fL">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Начальная плотность" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cB1-a9-pvJ">
+                                        <rect key="frame" x="0.0" y="47" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Результат" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IqB-PH-0ct">
+                                        <rect key="frame" x="0.0" y="94" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GYu-fD-QzM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ta4-6k-Mui" firstAttribute="top" secondItem="GYu-fD-QzM" secondAttribute="top" constant="20" id="MvB-AV-uhf"/>
+                            <constraint firstItem="ta4-6k-Mui" firstAttribute="leading" secondItem="GYu-fD-QzM" secondAttribute="leading" constant="16" id="TVU-kd-S3Y"/>
+                            <constraint firstItem="2ok-vK-6cu" firstAttribute="top" secondItem="ta4-6k-Mui" secondAttribute="bottom" constant="93" id="Ubd-Aj-cp3"/>
+                            <constraint firstItem="GYu-fD-QzM" firstAttribute="trailing" secondItem="ta4-6k-Mui" secondAttribute="trailing" constant="16" id="VkN-X3-bEM"/>
+                            <constraint firstItem="2ok-vK-6cu" firstAttribute="centerX" secondItem="ta4-6k-Mui" secondAttribute="centerX" id="xVq-NC-Wn1"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Просто посчитать" image="percent" catalog="system" id="u00-7P-9du"/>
+                    <navigationItem key="navigationItem" title="Калькулятор" id="5TF-8M-sUs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQe-DH-Z2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-849" y="1110"/>
+            <point key="canvasLocation" x="77.099236641221367" y="1109.8591549295775"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bfo-8y-InT">
@@ -192,7 +241,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaO-lX-v16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1169" y="1110"/>
+            <point key="canvasLocation" x="2095.419847328244" y="1109.8591549295775"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Rti-ZU-8za">
@@ -206,12 +255,31 @@
                     </tabBar>
                     <connections>
                         <segue destination="cR0-Gl-MpH" kind="relationship" relationship="viewControllers" id="4WI-1v-Zc4"/>
-                        <segue destination="9om-L8-3mf" kind="relationship" relationship="viewControllers" id="pWe-J1-rKh"/>
+                        <segue destination="CXq-4Z-xe8" kind="relationship" relationship="viewControllers" id="pWe-J1-rKh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BxT-gX-B4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-845.03816793893122" y="338.73239436619718"/>
+        </scene>
+        <!--Калькулятор-->
+        <scene sceneID="aaJ-e9-q5j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CXq-4Z-xe8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Калькулятор" image="percent" catalog="system" id="u00-7P-9du"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3vo-de-H0e">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9om-L8-3mf" kind="relationship" relationship="rootViewController" id="Li7-DU-Vol"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hcj-ty-CnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-849.61832061068696" y="1109.8591549295775"/>
         </scene>
     </scenes>
     <resources>
@@ -221,6 +289,9 @@
         <image name="xmark.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

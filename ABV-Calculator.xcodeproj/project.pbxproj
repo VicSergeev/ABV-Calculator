@@ -17,6 +17,8 @@
 		18EFB13D2B485BFB00FBE1E2 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB13C2B485BFB00FBE1E2 /* DataStore.swift */; };
 		18EFB1622B4ED9B800FBE1E2 /* NewBrewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB1612B4ED9B800FBE1E2 /* NewBrewViewController.swift */; };
 		18EFB1642B4EDA0300FBE1E2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB1632B4EDA0300FBE1E2 /* AboutViewController.swift */; };
+		18EFB1662B4EE38D00FBE1E2 /* BrewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB1652B4EE38D00FBE1E2 /* BrewViewController.swift */; };
+		18EFB1682B4EE3AC00FBE1E2 /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB1672B4EE3AC00FBE1E2 /* CalcViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		18EFB13C2B485BFB00FBE1E2 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		18EFB1612B4ED9B800FBE1E2 /* NewBrewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBrewViewController.swift; sourceTree = "<group>"; };
 		18EFB1632B4EDA0300FBE1E2 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		18EFB1652B4EE38D00FBE1E2 /* BrewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewViewController.swift; sourceTree = "<group>"; };
+		18EFB1672B4EE3AC00FBE1E2 /* CalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				18EFB1242B485AF300FBE1E2 /* MainViewController.swift */,
 				18EFB1612B4ED9B800FBE1E2 /* NewBrewViewController.swift */,
 				18EFB1632B4EDA0300FBE1E2 /* AboutViewController.swift */,
+				18EFB1652B4EE38D00FBE1E2 /* BrewViewController.swift */,
+				18EFB1672B4EE3AC00FBE1E2 /* CalcViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -192,7 +198,9 @@
 			files = (
 				18EFB1252B485AF300FBE1E2 /* MainViewController.swift in Sources */,
 				18EFB1212B485AF300FBE1E2 /* AppDelegate.swift in Sources */,
+				18EFB1662B4EE38D00FBE1E2 /* BrewViewController.swift in Sources */,
 				18EFB1232B485AF300FBE1E2 /* SceneDelegate.swift in Sources */,
+				18EFB1682B4EE3AC00FBE1E2 /* CalcViewController.swift in Sources */,
 				18EFB1642B4EDA0300FBE1E2 /* AboutViewController.swift in Sources */,
 				18EFB13D2B485BFB00FBE1E2 /* DataStore.swift in Sources */,
 				18EFB1382B485BBE00FBE1E2 /* Value.swift in Sources */,
