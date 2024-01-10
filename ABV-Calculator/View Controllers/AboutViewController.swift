@@ -9,6 +9,8 @@ import UIKit
 
 final class AboutViewController: UIViewController {
 
+    // о команде
+    // краткое описание
     override func viewDidLoad() {
         super.viewDidLoad()
     }
