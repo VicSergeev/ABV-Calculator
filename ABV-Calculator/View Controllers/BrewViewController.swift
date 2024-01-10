@@ -20,5 +20,4 @@ final class BrewViewController: UIViewController {
     
     @IBAction func deleteCellAction(_ sender: UIButton) {
     }
-    
 }
