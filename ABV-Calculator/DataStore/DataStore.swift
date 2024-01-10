@@ -5,4 +5,6 @@
 //  Created by Vic on 05.01.2024.
 //
 
-import Foundation
+final class DataStore {
+    
+}
