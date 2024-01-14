@@ -13,9 +13,6 @@ final class NewBrewViewController: UIViewController {
     @IBOutlet var originalGravityTextField: UITextField!
     @IBOutlet var finalGravityTextField: UITextField!
     
-    // дэйт пикера в курсе еще не было, можно заменить на единственное поле, в котором пользователь сам пишет количество дней
-    @IBOutlet var beginFermentationDatePicker: UIDatePicker!
-    @IBOutlet var endFermentationDatePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()

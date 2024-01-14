@@ -13,6 +13,10 @@ final class CalcViewController: UIViewController {
     @IBOutlet var finalGravityTextField: UITextField!
     @IBOutlet var resultTextField: UITextField!
     
+    private var og = 0.0
+    private var fg = 0.0
+    private var result = 0.0
+    
     // вычисление результата
     
     override func viewDidLoad() {
@@ -21,6 +25,14 @@ final class CalcViewController: UIViewController {
     }
     
     @IBAction func getResultAction(_ sender: UIButton) {
+        
+        if originalGravityTextField.text == "" {
+            showAlert(withTitle: "Ошибка", andMessage: "Введите начальную плотность")
+        } else if finalGravityTextField.text == "" {
+            showAlert(withTitle: "Ошибка", andMessage: "Введите конечную плотность")
+        } else {
+            makeCalculation()
+        }
     }
     
     @IBAction func clearAction(_ sender: UIButton) {
@@ -30,4 +42,30 @@ final class CalcViewController: UIViewController {
     }
     
 }
-// добавить алерты если поля пустые при нажатии на вычисление
+
+
+private extension CalcViewController {
+    
+    func makeCalculation() {
+        if let inputOG = originalGravityTextField.text, !inputOG.isEmpty {
+            og = Double(inputOG) ?? 0.0
+            print("og is \(og)")
+        }
+        if let inputFG = finalGravityTextField.text, !inputFG.isEmpty {
+            fg = Double(inputFG) ?? 0.0
+            print("fg is \(fg)")
+        }
+        
+        result = (og - fg) * 131.25
+        resultTextField.text = "\(String(format: "%.2f", result)) %"
+    }
+    
+    func showAlert(withTitle title: String, andMessage message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        
+        alert.addAction(okAction)
+        
+        present(alert, animated: true)
+    }
+}
