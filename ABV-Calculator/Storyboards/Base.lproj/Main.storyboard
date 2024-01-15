@@ -8,20 +8,75 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--About View Controller-->
+        <!--О проекте-->
         <scene sceneID="LlV-i9-cim">
             <objects>
                 <viewController id="QZH-5z-Ato" customClass="AboutViewController" customModule="ABV_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="naa-pp-qWi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e5p-Vp-1Gs">
+                                <rect key="frame" x="16" y="132.5" width="288" height="316"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="pFm-gb-71U">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jjr-pr-I24">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNC-DI-43j">
+                                                <rect key="frame" x="158" y="38" width="130" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="i6s-2g-r7g">
+                                        <rect key="frame" x="0.0" y="108" width="288" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5NW-JM-I3e">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3J-v9-3ll">
+                                                <rect key="frame" x="158" y="38" width="130" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="ffi-bE-nkr">
+                                        <rect key="frame" x="0.0" y="216" width="288" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vSQ-nh-f7j">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYy-wa-j4u">
+                                                <rect key="frame" x="158" y="38" width="130" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3LJ-6V-52v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e5p-Vp-1Gs" firstAttribute="leading" secondItem="3LJ-6V-52v" secondAttribute="leading" constant="16" id="3Rp-7e-kT8"/>
+                            <constraint firstItem="e5p-Vp-1Gs" firstAttribute="top" secondItem="3LJ-6V-52v" secondAttribute="top" constant="20" id="JvJ-tJ-7fn"/>
+                            <constraint firstItem="3LJ-6V-52v" firstAttribute="trailing" secondItem="e5p-Vp-1Gs" secondAttribute="trailing" constant="16" id="exf-ME-bst"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="О проекте" id="QAz-Hn-5uT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3E-TD-rmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008.3969465648854" y="1109.8591549295775"/>
+            <point key="canvasLocation" x="510" y="2040"/>
         </scene>
         <!--Создать напиток-->
         <scene sceneID="LCD-HR-FVF">
@@ -119,9 +174,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bua-kU-SAu">
-                                <rect key="frame" x="106" y="428" width="109.5" height="34.5"/>
+                                <rect key="frame" x="105.5" y="428" width="109.5" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Сохранить"/>
+                                <connections>
+                                    <action selector="saveAction:" destination="LMC-nv-ia3" eventType="touchUpInside" id="Q2c-RN-nw6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Yc-Mm-Y7h"/>
@@ -143,13 +201,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="brewTitleTextField" destination="RDB-qZ-3By" id="PIU-Tu-HPz"/>
+                        <outlet property="daysPassed" destination="lL8-xa-o3f" id="eRo-jM-b1f"/>
                         <outlet property="finalGravityTextField" destination="Mtc-i7-9Ug" id="7HV-cu-jFu"/>
                         <outlet property="originalGravityTextField" destination="cxz-CG-D2W" id="eeJ-D9-ffD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPZ-Kf-HnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2985.4961832061067" y="1109.8591549295775"/>
+            <point key="canvasLocation" x="2154" y="656"/>
         </scene>
         <!--Мои напитки-->
         <scene sceneID="9ld-hw-pmh">
@@ -178,11 +237,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Мои напитки" id="HxB-M3-lE6">
-                        <barButtonItem key="leftBarButtonItem" title="Info" image="info.circle" catalog="system" id="mlZ-1W-DvD">
-                            <connections>
-                                <segue destination="QZH-5z-Ato" kind="presentation" id="Y8x-3Q-pMC"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9VD-Zx-Snn">
                             <connections>
                                 <segue destination="edA-0o-rCf" kind="presentation" modalPresentationStyle="fullScreen" id="ZX0-q8-t0l"/>
@@ -192,7 +246,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3w-QE-EA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168.7022900763359" y="339.43661971830988"/>
+            <point key="canvasLocation" x="510" y="337"/>
         </scene>
         <!--Brew View Controller-->
         <scene sceneID="cC2-fj-5S9">
@@ -291,7 +345,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YlJ-k9-DDo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2060.3053435114502" y="338.73239436619718"/>
+            <point key="canvasLocation" x="1343" y="-39"/>
         </scene>
         <!--Мои напитки-->
         <scene sceneID="Ifo-3o-ZqV">
@@ -308,7 +362,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T7Y-5x-R7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81.679389312977094" y="338.73239436619718"/>
+            <point key="canvasLocation" x="-248" y="337"/>
         </scene>
         <!--Калькулятор-->
         <scene sceneID="75B-5A-cTy">
@@ -396,7 +450,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQe-DH-Z2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76.875" y="1109.1549295774648"/>
+            <point key="canvasLocation" x="510" y="1226"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bfo-8y-InT">
@@ -414,7 +468,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaO-lX-v16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2095.419847328244" y="1109.8591549295775"/>
+            <point key="canvasLocation" x="1343" y="657"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Rti-ZU-8za">
@@ -429,11 +483,12 @@
                     <connections>
                         <segue destination="cR0-Gl-MpH" kind="relationship" relationship="viewControllers" id="4WI-1v-Zc4"/>
                         <segue destination="CXq-4Z-xe8" kind="relationship" relationship="viewControllers" id="pWe-J1-rKh"/>
+                        <segue destination="zvp-jm-tTk" kind="relationship" relationship="viewControllers" id="DBy-2M-GSm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BxT-gX-B4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-845.03816793893122" y="338.73239436619718"/>
+            <point key="canvasLocation" x="-1155" y="337"/>
         </scene>
         <!--Калькулятор-->
         <scene sceneID="aaJ-e9-q5j">
@@ -452,14 +507,33 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcj-ty-CnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-849.61832061068696" y="1109.8591549295775"/>
+            <point key="canvasLocation" x="-249" y="1227"/>
+        </scene>
+        <!--Участники проекта-->
+        <scene sceneID="Dfu-5D-ebc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zvp-jm-tTk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Участники проекта" image="person.3.sequence.fill" catalog="system" id="Tmj-oO-LOy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="4QG-cc-Mpl">
+                        <rect key="frame" x="0.0" y="20" width="320" height="92.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QZH-5z-Ato" kind="relationship" relationship="rootViewController" id="zFV-TS-k33"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7a-km-efW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249" y="2040"/>
         </scene>
     </scenes>
     <resources>
-        <image name="info.circle" catalog="system" width="32" height="32"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="percent" catalog="system" width="128" height="121"/>
-        <image name="xmark.circle" catalog="system" width="32" height="32"/>
+        <image name="person.3.sequence.fill" catalog="system" width="128" height="63"/>
+        <image name="xmark.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

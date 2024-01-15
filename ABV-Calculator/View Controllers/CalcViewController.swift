@@ -17,8 +17,6 @@ final class CalcViewController: UIViewController {
     private var fg = 0.0
     private var result = 0.0
     
-    // вычисление результата
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         resultTextField.isEnabled = false
@@ -49,11 +47,9 @@ private extension CalcViewController {
     func makeCalculation() {
         if let inputOG = originalGravityTextField.text, !inputOG.isEmpty {
             og = Double(inputOG) ?? 0.0
-            print("og is \(og)")
         }
         if let inputFG = finalGravityTextField.text, !inputFG.isEmpty {
             fg = Double(inputFG) ?? 0.0
-            print("fg is \(fg)")
         }
         
         result = (og - fg) * 131.25

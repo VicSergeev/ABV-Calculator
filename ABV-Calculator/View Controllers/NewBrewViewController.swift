@@ -12,6 +12,7 @@ final class NewBrewViewController: UIViewController {
     @IBOutlet var brewTitleTextField: UITextField!
     @IBOutlet var originalGravityTextField: UITextField!
     @IBOutlet var finalGravityTextField: UITextField!
+    @IBOutlet var daysPassed: UITextField!
     
     
     override func viewDidLoad() {
@@ -23,4 +24,10 @@ final class NewBrewViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    // проверка заполненных полей перед сохранением
+    @IBAction func saveAction(_ sender: UIButton) {
+    }
+    
+    
 }
+
