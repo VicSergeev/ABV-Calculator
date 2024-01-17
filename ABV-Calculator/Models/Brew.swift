@@ -14,13 +14,9 @@ struct Brew {
     let finalDate: String
     let originalGravity: Double
     let finalGravity: Double
+//    let brewImage:
     
     var avb: Double {
         (originalGravity - finalGravity) * 131.25
-    }
-    
-    var daysOfFermentation: String {
-        ""
-        // расчет дней между датами
     }
 }
