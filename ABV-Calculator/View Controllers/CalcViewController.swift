@@ -13,8 +13,8 @@ final class CalcViewController: UIViewController {
     @IBOutlet var finalGravityTextField: UITextField!
     @IBOutlet var resultTextField: UITextField!
     
-    private var og = 0.0
-    private var fg = 0.0
+    private var originalGravity = 0.0
+    private var finalGravity = 0.0
     private var result = 0.0
     
     override func viewDidLoad() {
@@ -41,18 +41,17 @@ final class CalcViewController: UIViewController {
     
 }
 
-
 private extension CalcViewController {
     
     func makeCalculation() {
         if let inputOG = originalGravityTextField.text, !inputOG.isEmpty {
-            og = Double(inputOG) ?? 0.0
+            originalGravity = Double(inputOG) ?? 0.0
         }
         if let inputFG = finalGravityTextField.text, !inputFG.isEmpty {
-            fg = Double(inputFG) ?? 0.0
+            finalGravity = Double(inputFG) ?? 0.0
         }
         
-        result = (og - fg) * 131.25
+        result = (originalGravity - finalGravity) * 131.25
         resultTextField.text = "\(String(format: "%.2f", result)) %"
     }
     
