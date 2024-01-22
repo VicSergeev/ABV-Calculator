@@ -37,7 +37,7 @@ final class CalcViewController: UIViewController {
     @IBAction func clearAction(_ sender: UIButton) {
         originalGravityTextField.text = ""
         finalGravityTextField.text = ""
-        resultLabel.text = ""
+        resultLabel.text = "Результат"
     }
     
 }
