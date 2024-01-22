@@ -8,17 +8,17 @@
 final class DataStore {
     
     static let shared = DataStore()
-    // демо данные
-    var titles = [
-        "Хефевайцен",
-        "Венское",
-        "Яблочный",
-        "Грушевый",
-        "Саперави",
-        "Каберне"
+    
+    let titles = [
+        "Светлое пиво",
+        "Темное пиво",
+        "Яблочный сидр",
+        "Грушевый сидр",
+        "Красное вино",
+        "Белое вино"
     ]
     
-    var brewTypes = [
+    let brewTypes = [
         "пиво",
         "пиво",
         "сидр",
@@ -27,7 +27,7 @@ final class DataStore {
         "вино"
     ]
     
-    var originalGravity = [
+    let originalGravity = [
         1.080,
         1.050,
         1.060,
@@ -36,7 +36,7 @@ final class DataStore {
         1.140
     ]
     
-    var finalGravity = [
+    let finalGravity = [
         1.011,
         1.010,
         1.021,
@@ -45,7 +45,7 @@ final class DataStore {
         1.021
     ]
     
-    var daysOfFermentation = [
+    let daysOfFermentation = [
         18,
         25,
         36,
@@ -60,7 +60,16 @@ final class DataStore {
 final class DeveloperDataStore {
     static let shared = DeveloperDataStore()
     
-    // имена для AboutVC 
+    let names = [
+        "Viktor",
+        "John",
+        "Mason"
+    ]
+    let lastnames = [
+        "Sergeev",
+        "Smith",
+        "Johnson"
+    ]
     
     private init() {}
 }

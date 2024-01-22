@@ -11,7 +11,8 @@ final class CalcViewController: UIViewController {
     
     @IBOutlet var originalGravityTextField: UITextField!
     @IBOutlet var finalGravityTextField: UITextField!
-    @IBOutlet var resultTextField: UITextField!
+    @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var resultView: UIView!
     
     private var originalGravity = 0.0
     private var finalGravity = 0.0
@@ -19,7 +20,7 @@ final class CalcViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultTextField.isEnabled = false
+        resultView.layer.cornerRadius = 3
     }
     
     @IBAction func getResultAction(_ sender: UIButton) {
@@ -36,23 +37,27 @@ final class CalcViewController: UIViewController {
     @IBAction func clearAction(_ sender: UIButton) {
         originalGravityTextField.text = ""
         finalGravityTextField.text = ""
-        resultTextField.text = ""
+        resultLabel.text = ""
     }
     
 }
 
+// MARK: - Private Methods
 private extension CalcViewController {
     
     func makeCalculation() {
         if let inputOG = originalGravityTextField.text, !inputOG.isEmpty {
             originalGravity = Double(inputOG) ?? 0.0
+            print(originalGravity)
         }
         if let inputFG = finalGravityTextField.text, !inputFG.isEmpty {
             finalGravity = Double(inputFG) ?? 0.0
+            print(finalGravity)
         }
         
         result = (originalGravity - finalGravity) * 131.25
-        resultTextField.text = "\(String(format: "%.2f", result)) %"
+        print(result)
+        resultLabel.text = "\(String(format: "%.2f", result)) %"
     }
     
     func showAlert(withTitle title: String, andMessage message: String) {
