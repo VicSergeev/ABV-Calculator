@@ -20,6 +20,8 @@ final class CalcViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        originalGravityTextField.delegate = self
+        finalGravityTextField.delegate = self
         resultView.layer.cornerRadius = 3
     }
     
@@ -65,5 +67,12 @@ private extension CalcViewController {
         alert.addAction(okAction)
         
         present(alert, animated: true)
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension CalcViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 }
