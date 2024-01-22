@@ -48,15 +48,12 @@ private extension CalcViewController {
     func makeCalculation() {
         if let inputOG = originalGravityTextField.text, !inputOG.isEmpty {
             originalGravity = Double(inputOG) ?? 0.0
-            print(originalGravity)
         }
         if let inputFG = finalGravityTextField.text, !inputFG.isEmpty {
             finalGravity = Double(inputFG) ?? 0.0
-            print(finalGravity)
         }
         
         result = (originalGravity - finalGravity) * 131.25
-        print(result)
         resultLabel.text = "\(String(format: "%.2f", result)) %"
     }
     
