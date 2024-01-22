@@ -32,6 +32,7 @@ final class CalcViewController: UIViewController {
         } else {
             makeCalculation()
         }
+        view.endEditing(true)
     }
     
     @IBAction func clearAction(_ sender: UIButton) {
